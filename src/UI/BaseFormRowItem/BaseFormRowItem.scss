@@ -1,0 +1,19 @@
+.form-row__item-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.form-row__item-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-row__name {
+  min-width: 120px;
+  max-width: 120px;
+  color: $fontDisabled;
+  font-size: $regularFontSize;
+}
+.form-row__star {
+  color: $fontError;
+}

@@ -1,0 +1,39 @@
+.status-item__blue {
+  color: $fontSecondary;
+  font-size: $regularFontSize;
+  font-weight: $fontWeightRegular;
+
+  padding: 0px 8px;
+  background-color: $backgroundPrimaryDefault;
+  border-radius: $borderRadius;
+}
+
+.status-item__brown {
+  color: $fontSecondary;
+  font-size: $regularFontSize;
+  font-weight: $fontWeightRegular;
+
+  padding: 0px 8px;
+  background-color: $borderBronze;
+  border-radius: $borderRadius;
+}
+
+.status-item__red {
+  color: $fontSecondary;
+  font-size: $regularFontSize;
+  font-weight: $fontWeightRegular;
+
+  padding: 0px 8px;
+  background-color: $borderError;
+  border-radius: $borderRadius;
+}
+
+.status-item__gray {
+  color: $fontSecondary;
+  font-size: $regularFontSize;
+  font-weight: $fontWeightRegular;
+
+  padding: 0px 8px;
+  background-color: $fontDisabled;
+  border-radius: $borderRadius;
+}

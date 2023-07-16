@@ -1,0 +1,44 @@
+.toggle {
+  max-width: 48px;
+  max-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .toggle__checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    &:checked {
+      + {
+        .toggle__label {
+          background: $backgroundPrimaryDefault;
+          &:after {
+            left: calc(100% - 2.5px);
+            transform: translateX(-100%);
+          }
+        }
+      }
+    }
+  }
+  .toggle__label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 48px;
+    height: 24px;
+    background: $borderDefault;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2.5px;
+      width: 19px;
+      height: 20px;
+      background: $backgroundSecondary;
+      border-radius: 100px;
+      transition: 0.3s;
+    }
+  }
+}

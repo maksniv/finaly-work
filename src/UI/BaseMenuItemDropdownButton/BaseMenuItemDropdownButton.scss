@@ -1,0 +1,19 @@
+.dropdown-menu__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px 16px;
+  &:hover {
+    background-color: $backgroundSecondaryHover;
+  }
+  &:disabled {
+    color: $fontDisabled;
+  }
+}
+.red {
+  color: $fontError;
+}

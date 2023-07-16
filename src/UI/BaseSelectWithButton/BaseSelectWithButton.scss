@@ -1,0 +1,78 @@
+.select__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  min-height: 42px;
+  max-height: 42px;
+
+  outline: none;
+
+  min-width: 100%;
+
+  .select__select {
+    flex: 1;
+    position: relative;
+    font-weight: $fontWeightRegular;
+    font-size: $regularFontSize;
+    line-height: $regularLineHeight;
+    border: 1px solid $borderDefault;
+    padding: 10px 35px 10px 8px;
+    border-radius: $borderRadius 0px 0px $borderRadius;
+    cursor: pointer;
+
+    .select__select-menu-container {
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      top: 44px;
+      transition: all 0.15s;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 8px 0px;
+
+      color: $fontPrimaryDefault;
+      background-color: $backgroundSecondary;
+      box-shadow: 0px 0px 4px $borderDefault;
+      .select__options {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .select__option {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          white-space: nowrap;
+          cursor: pointer;
+          padding: 8px 16px;
+          &:hover {
+            background-color: $backgroundSecondaryHover;
+          }
+        }
+      }
+    }
+  }
+
+  .select__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 8px;
+    color: $fontDisabled;
+
+    position: absolute;
+    top: calc(50% - 4px);
+    right: calc(20px - 7px);
+    transition: all 0.25s;
+  }
+  .select__icon-active {
+    transform: rotate(-180deg);
+    transition: all 0.25s;
+  }
+}

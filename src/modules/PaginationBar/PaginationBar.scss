@@ -1,0 +1,48 @@
+.pagination-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 12px;
+  .pagination-bar__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .pagination-bar__button-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+
+      margin-right: 32px;
+
+      .pagination-bar__button-pages {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    .pagination-bar__input-label {
+      font-size: $regularFontSize;
+      font-weight: $fontWeightRegular;
+      color: $fontDisabled;
+
+      margin-right: 8px;
+    }
+    .pagination-bar__input-wrapper {
+      display: flex;
+      flex-direction: row;
+      max-width: 70px;
+    }
+  }
+  .pagination-bar__page-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: $regularFontSize;
+    font-weight: $fontWeightRegular;
+    color: $fontDisabled;
+  }
+}

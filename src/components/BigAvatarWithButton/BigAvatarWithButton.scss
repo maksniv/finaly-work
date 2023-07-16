@@ -1,0 +1,21 @@
+.avatar-block__wrapper {
+  width: 324px;
+  height: 324px;
+  position: relative;
+  padding: 12px;
+  &:hover {
+    .avatar-block__more-button {
+      display: block;
+    }
+  }
+  .avatar-block__img {
+    width: 300px;
+    height: 300px;
+  }
+  .avatar-block__more-button {
+    display: none;
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+  }
+}

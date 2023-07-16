@@ -1,0 +1,53 @@
+.field {
+  width: 100%;
+  position: relative;
+  .field__input {
+    padding: 10px 40px 10px 12px;
+    width: 100%;
+    height: 100%;
+
+    border-radius: $borderRadius;
+    border: 1px solid $borderDefault;
+    color: $fontPrimaryDefault;
+    font-size: $regularFontSize;
+    background-color: $backgroundSecondary;
+    outline: none;
+    &:hover {
+      border: 1px solid $borderHover;
+    }
+    &:active {
+      border: 1px solid $borderActive;
+    }
+  }
+  .field__input-error {
+    border: 1px solid $borderError;
+  }
+  .field__icon-search {
+    color: $fontDisabled;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(21px - 12px);
+    transition: all 0.15s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .field__icon-password {
+    color: $borderDefault;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(21px - 12px);
+    transition: all 0.15s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: url(https://dummyimage.com/20x20/ffffff/7b00ff.png&text=X);
+  // background: url('@/assets/icons/input/clearIcon.svg');
+}

@@ -1,0 +1,22 @@
+.stub {
+  flex: 1;
+
+  margin: 0px 24px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  border: 1px solid $borderDefault;
+  border-radius: $borderRadius;
+  background-color: $backgroundSecondary;
+  .stub__span {
+    font-weight: $fontWeightRegular;
+    font-size: $regularFontSize;
+    line-height: $regularLineHeight;
+    color: $fontPrimaryDefault;
+  }
+}

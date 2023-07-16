@@ -1,0 +1,25 @@
+.sort-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-height: 42px;
+
+  gap: 24px;
+  padding: 0px 24px;
+  .sort-form__wrapper-input {
+    flex: 1;
+  }
+  .sort-form__wrapper-select {
+    flex: 0.3;
+  }
+  .sort-form__wrapper-sort-button {
+    display: block;
+  }
+  .sort-form__filter-menu {
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

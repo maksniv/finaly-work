@@ -1,0 +1,125 @@
+//navigation
+.button-navigation {
+  height: 42px;
+  cursor: pointer;
+
+  font-weight: $fontWeightRegular;
+  font-size: $regularFontSize;
+  line-height: $regularLineHeight;
+
+  border: $fontSecondary;
+  border-radius: $borderRadius;
+
+  background-color: transparent;
+  color: $fontSecondary;
+  user-select: none;
+
+  padding: 12px 16px;
+  transition: all 0.15s;
+  &:hover {
+    background-color: $backgroundSecondaryHover;
+    color: $fontPrimaryDefault;
+  }
+}
+.button-navigation-active {
+  background-color: $backgroundSecondary;
+  color: $fontPrimaryDefault;
+  transition: all 0.15s;
+  &:hover {
+    background-color: $backgroundSecondary;
+  }
+}
+//icon
+.button-icon {
+  cursor: pointer;
+  min-width: 42px;
+  max-width: 42px;
+  min-height: 42px;
+  max-height: 42px;
+
+  border: 1px solid $borderDefault;
+  color: $fontPrimaryDefault;
+  border-radius: $borderRadius;
+  background-color: $backgroundSecondary;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .button-icon__svg {
+    width: 4px;
+    height: 14px;
+  }
+  &:hover {
+    border: 1px solid $borderHover;
+    background-color: $backgroundSecondaryHover;
+  }
+  &:active {
+    border: 1px solid $borderDefault;
+    background-color: $backgroundSecondaryActive;
+  }
+  &:disabled {
+    border: 1px solid $borderDefault;
+    color: $fontDisabled;
+    background-color: $backgroundSecondary;
+  }
+}
+.button-icon__for-select {
+  border-radius: 0px $borderRadius $borderRadius 0px;
+}
+//primary
+.button-primary {
+  cursor: pointer;
+  padding: 12px 16px;
+  min-height: 42px;
+  max-height: 42px;
+
+  color: $fontSecondary;
+
+  background-color: $backgroundPrimaryDefault;
+  border-radius: $borderRadius;
+  border: none;
+  &:hover {
+    background-color: $backgroundPrimaryHover;
+  }
+  &:active {
+    background-color: $backgroundPrimaryActive;
+  }
+  &:disabled {
+    background-color: $backgroundPrimaryDisabled;
+    color: $fontDisabled;
+  }
+}
+//secondary
+.button-secondary {
+  cursor: pointer;
+  padding: 12px 16px;
+  min-height: 42px;
+  max-height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: $fontPrimaryDefault;
+  background-color: $backgroundSecondary;
+  border-radius: $borderRadius;
+  border: 1px solid $borderDefault;
+
+  &:hover {
+    background-color: $backgroundSecondaryHover;
+    border-color: $borderHover;
+  }
+  &:active {
+    border-color: $borderActive;
+    background-color: $backgroundSecondaryActive;
+  }
+  &:disabled {
+    color: $fontDisabled;
+  }
+}
+
+.hide {
+  display: none;
+}

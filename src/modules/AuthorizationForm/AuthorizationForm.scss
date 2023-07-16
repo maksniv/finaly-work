@@ -1,0 +1,30 @@
+.authorization-form {
+  min-width: 400px;
+  min-height: 500px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+  max-height: 550px;
+  .authorization-form__form {
+    position: relative;
+    flex: 1;
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .authorization-form__error {
+    display: block;
+    // position: absolute;
+    // top: 0px;
+
+    min-width: 20px;
+    color: #ee4222;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

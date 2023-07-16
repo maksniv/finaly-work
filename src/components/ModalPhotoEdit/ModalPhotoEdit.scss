@@ -1,0 +1,8 @@
+.modal-photo-edit {
+  display: flex;
+  min-width: 640px;
+  height: 640px;
+  .modal-photo-edit__form {
+    flex: 1;
+  }
+}

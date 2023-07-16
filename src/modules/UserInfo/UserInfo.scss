@@ -1,0 +1,40 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 0px 24px;
+  .user-info__button-wrapper {
+    display: flex;
+  }
+  .user-info__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    .description {
+      flex: 1;
+      .description__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .description__name {
+        color: $fontPrimaryDefault;
+        font-size: $h2FontSize;
+
+        font-weight: $fontWeightBold;
+        margin-bottom: 24px;
+      }
+      .description__about {
+        color: $fontDisabled;
+        font-size: $regularFontSize;
+
+        margin-bottom: 8px;
+      }
+      .description__text {
+        color: $fontPrimaryDefault;
+        font-size: $regularFontSize;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.modal__content {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  .modal__selection {
+    padding: 0px 4px;
+    color: red;
+  }
+}

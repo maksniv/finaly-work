@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  .navigation-bar {
+    height: 90px;
+    background-color: $backgroundPrimaryDefault;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+  }
+}
+
+// .router-link-active {
+//   height: 42px;
+//   cursor: pointer;
+
+//   font-weight: $fontWeightRegular;
+//   font-size: $regularFontSize;
+//   line-height: $regularLineHeight;
+
+//   border: 1px solid $fontSecondary;
+//   border-radius: $borderRadius;
+
+//   background-color: transparent;
+//   color: $fontSecondary;
+//   user-select: none;
+
+//   padding: 12px 16px;
+//   transition: all 0.15s;
+//   &:hover {
+//     background-color: $backgroundSecondaryHover;
+//     color: $fontPrimaryDefault;
+//   }
+// }
+a {
+  height: 42px;
+  cursor: pointer;
+
+  font-weight: $fontWeightRegular;
+  font-size: $regularFontSize;
+  line-height: $regularLineHeight;
+
+  border: 1px solid $fontSecondary;
+  border-radius: $borderRadius;
+
+  background-color: transparent;
+  color: $fontSecondary !important;
+  user-select: none;
+
+  padding: 12px 16px;
+  transition: all 0.15s;
+  &:hover {
+    background-color: $backgroundSecondaryHover;
+    color: $fontPrimaryDefault;
+  }
+}
+.router-link-exact-active {
+  background-color: $backgroundSecondary;
+  color: $fontPrimaryDefault !important;
+  transition: all 0.15s;
+  &:hover {
+    background-color: $backgroundSecondary;
+  }
+}
