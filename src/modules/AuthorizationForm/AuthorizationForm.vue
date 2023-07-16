@@ -43,16 +43,6 @@
         ></BaseButton>
       </template>
     </BaseForm>
-    <BaseButton
-      @click.native="
-        $router.push({
-          name: 'projects',
-          params: { pageNumber: 1 },
-        })
-      "
-      :textButton="'Войти'"
-      :class="'button-primary'"
-    ></BaseButton>
   </div>
 </template>
 

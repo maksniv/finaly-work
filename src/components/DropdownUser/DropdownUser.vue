@@ -24,11 +24,7 @@
         :textMenu="'Профиль'"
       ></BaseMenuItemDropdownButton>
       <BaseMenuItemDropdownButton
-        @click.native="
-          $router.push({
-            name: 'authorization',
-          })
-        "
+        @click.native="exitFromSystem"
         :className="'dropdown-menu__item'"
         :textMenu="'Выход'"
       >
@@ -55,6 +51,12 @@ export default {
   methods: {
     onClickOutside() {
       this.isOpened = false;
+    },
+    exitFromSystem() {
+      this.$router.push({
+        name: 'authorization',
+      });
+      localStorage.removeItem('token');
     },
   },
   directives: {
